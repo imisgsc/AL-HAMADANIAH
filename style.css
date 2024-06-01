@@ -67,7 +67,7 @@ body {
     gap: 20px 0px; 
     justify-items: center;
     margin: 40px 20px 20px; 
-    margin-bottom: 80px;
+    margin-bottom: 120px;
 }
 
 #button-grid button {
@@ -76,6 +76,7 @@ body {
     background-color: white;
     color: black;
     cursor: pointer;
+    height: 50px;
     border-radius: 12px; 
     transition: background-color 0.3s, color 0.3s; 
     font-weight: 500;
@@ -83,6 +84,7 @@ body {
 
 
 #button-grid button:hover {
-    background-color: #007bff;
+    background-color: #050505;
     color: white;
 }
+
