@@ -14,19 +14,25 @@ body {
     background-color: #f8f9fa;
 }
 
-h3 {
+#top-section p{
+    font-size: 20px;
+}
+
+#top-section h3 {
     margin-top: 20px;
     margin-left: 20px;
-    font-size: 30px;
+    font-size: 20px;
     color: rgb(20, 118, 204);
 }
 
-#logo {
-    height: 50px;
+.contact-link {
+    color: inherit;  /* This will make the color of the link inherit from its parent element */
+    text-decoration: none;  /* This will remove the underline from the link */
+    cursor: default;  /* This will change the cursor to the default arrow instead of the hand icon */
 }
 
 #whatsapp-link img {
-    height: 30px;
+    height: 40px;
     margin-right: 30px;
 }
 
@@ -45,46 +51,33 @@ h3 {
 }
 
 #info h2 {
-    font-size: 35px;
-}
-
-#info p {
-    margin-top: 0;
     font-size: 30px;
 }
 
-#contact-info {
-    text-align: center;
-    margin: 20px 0;
-    font-size: 30px;
+#info h3{
+    font-size: 26px;
+    margin-top: 1px;
+    margin-bottom: 20px;
 }
 
-#contact-info p {
-    margin: 5px 0;
+#buttons-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 20px;
 }
 
-#contact-info a {
-    text-decoration: none;
+#buttons-container button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#buttons-container button:hover {
+    background-color: rgb(234, 13, 13);
     color: white;
-}
-
-.contact-box {
-    background-color: rgba(20, 118, 204, 0.5); /* Translucent blue color */
-    border: none;
-    padding: 10px;
-    margin: 20px auto; /* Center the box */
-    border-radius: 5px; /* Optional: for rounded corners */
-    width: fit-content; /* Width adjusts based on content */
-    color: white; /* Ensure text color is white */
-}
-
-.contact-link {
-    color: white; /* Change link color to white */
-    text-decoration: none; /* Remove underline */
-    padding: 2px 5px; /* Optional: padding to give the link a button-like appearance */
-    border-radius: 3px; /* Optional: rounded corners for the link */
-}
-
-.contact-link:hover {
-    text-decoration: underline; /* Optional: underline on hover to indicate it's a link */
 }
