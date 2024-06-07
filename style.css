@@ -2,8 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000000;
+    background-color: #ffffff;
     color: #333;
+    background-image: url('images/bg.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 #top-section {
@@ -11,18 +15,19 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #f8f9fa;
+    background-color: #0e549a;
 }
 
 #top-section p{
     font-size: 20px;
+    color: #fff;
 }
 
 #top-section h3 {
     margin-top: 20px;
     margin-left: 20px;
     font-size: 20px;
-    color: rgb(20, 118, 204);
+    color: #fff;
 }
 
 .contact-link {
@@ -37,8 +42,7 @@ body {
 }
 
 #main-content {
-    background-color: black;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 20px;
 }
 
@@ -52,6 +56,10 @@ body {
 
 #info h2 {
     font-size: 30px;
+}
+
+#info h2 span{
+    color: #0e549a;
 }
 
 #info h3{
@@ -70,14 +78,61 @@ body {
 #buttons-container button {
     padding: 10px 20px;
     font-size: 18px;
-    background-color: white;
+    background-color: #7baade;
     color: black;
-    border: 2px solid black;
+    border: 2px solid #0e549a;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
 
 #buttons-container button:hover {
-    background-color: rgb(234, 13, 13);
+    background-color: #3073b6;
     color: white;
+}
+
+/* Card styles */
+.card {
+    background-color:#3073b6;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.text-box {
+    flex: 2;
+}
+
+.text-box h3 {
+    margin-top: 0;
+    font-size: 30px;
+}
+
+.text-box p {
+    margin: 0;
+    font-size: 20px;
 }
