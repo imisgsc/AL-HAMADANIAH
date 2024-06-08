@@ -2,10 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    background-color: #7e7b7b;
     color: #333;
-    background-image: url('images/bg.jpeg');
-    background-position: center;
 }
 
 #top-section {
@@ -68,17 +66,17 @@ body {
 
 #buttons-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 10px;
     margin-top: 20px;
 }
 
 #buttons-container button {
     padding: 10px 20px;
-    width: 200px;
+    width: 300px;
     margin: 0;
     font-size: 18px;
-    background-color: #7baade;
+    background-color: #ffffff;
     color: black;
     border: 2px solid #0e549a;
     cursor: pointer;
@@ -87,7 +85,7 @@ body {
 }
 
 #buttons-container button:hover {
-    background-color: #3073b6;
+    background-color: #9aadb7;
     color: white;
 }
 
@@ -106,7 +104,6 @@ body {
     margin-right: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: #fff;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
