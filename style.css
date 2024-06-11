@@ -179,8 +179,8 @@ body::before {
 
 
 .text-box h3 {
-    margin-top: 0;
-    font-size: 30px;
+    margin:0;
+    font-size: 50px;
     color: #1c5b9a;
 }
 
