@@ -25,7 +25,7 @@ body::before {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #0e549a;
+    background-color: #000000;
 }
 
 #top-section p{
@@ -34,9 +34,10 @@ body::before {
 }
 
 #top-section h3 {
-    margin-top: 5px;
+    margin-top: 10px;
     margin-left: 20px;
     font-size: 20px;
+    align-items: center;
     color: #fff;
 }
 
@@ -128,14 +129,14 @@ body::before {
     font-size: 18px;
     background-color: #ffffff;
     color: black;
-    border: 2px solid #5797d6;
+    border: 2px solid #000000;
     cursor: pointer;
     border-radius: 10px;
     transition: background-color 0.3s, color 0.3s;
 }
 
 #buttons-container button:hover {
-    background-color: #6aaacd;
+    background-color: #a5a9ac;
     color: white;
 }
 
