@@ -3,20 +3,19 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-image: url('images/bgimage.jpg');
+    background-color: #91baeb;
 }
 
 #top-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
     background-color: #000000;
 }
 
 #top-section p{
     font-size: 20px;
-    color: #fff;
+    color: #ffffff;
 }
 
 #top-section h3 {
@@ -24,7 +23,7 @@ body {
     margin-left: 20px;
     font-size: 20px;
     align-items: center;
-    color: #fff;
+    color: #ffffff;
 }
 
 .contact-link {
@@ -93,7 +92,7 @@ body {
 }
 
 #info h2 span{
-    color: #082f56;
+    color: #ffffff;
 }
 
 #info h3{
