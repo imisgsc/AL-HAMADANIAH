@@ -107,7 +107,7 @@ body::before {
 }
 
 #info h2 span{
-    color: #0e549a;
+    color: #082f56;
 }
 
 #info h3{
@@ -133,11 +133,6 @@ body::before {
     cursor: pointer;
     border-radius: 10px;
     transition: background-color 0.3s, color 0.3s;
-}
-
-#buttons-container button:hover {
-    background-color: #a5a9ac;
-    color: white;
 }
 
 /* Card styles */
