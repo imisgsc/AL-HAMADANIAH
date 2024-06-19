@@ -63,7 +63,7 @@ body {
 }
 
 .slide {
-    min-width: 150px; 
+    min-width: 200px; 
     margin: 0 10px;
     display: flex;
     justify-content: center;
@@ -71,9 +71,9 @@ body {
 }
 
 .slide img {
-    width: 150px; 
+    width: 200px; 
     height: 100px; 
-    object-fit: cover; 
+    object-fit: contain; 
     border-radius: 8px;
 }
 
