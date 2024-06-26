@@ -90,13 +90,13 @@ body {
 
 #buttons-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(5, 1fr);
     gap: 15px;
     margin-top: 20px;
 }
 
 #buttons-container button {
-    padding: 10px;
+    padding: 20px;
     background-color: #fff;
     border: 2px solid #1e90ff;
     border-radius: 10px;
@@ -126,7 +126,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 10px;
     margin: 10px;
-    flex: 0 1 calc(25% - 20px);
+    flex: 0 1 calc(33.333% - 20px); /* 3 cards per row */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
     overflow: hidden;
