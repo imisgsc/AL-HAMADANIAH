@@ -46,9 +46,10 @@ body {
 
 .slider {
     display: flex;
-    height: 100px;
+    align-items: center;
     width: max-content;
     animation: scroll 30s linear infinite;
+    padding: 10px; /* Optional: adds padding around the slider for better appearance */
 }
 
 @keyframes scroll {
@@ -57,17 +58,17 @@ body {
 }
 
 .slide {
-    min-width: 200px; 
-    margin: 0 10px;
+    flex: 0 0 auto; /* Prevents flexbox from shrinking the images */
+    margin: 0 15px; /* Adjusts spacing between images */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .slide img {
-    width: 200px; 
-    height: 100px; 
-    object-fit: contain; 
+    width: 150px; /* Ensures all images are the same width */
+    height: 75px; /* Ensures all images are the same height */
+    object-fit: contain; /* Ensures images keep their aspect ratio within the specified width and height */
     border-radius: 8px;
 }
 
