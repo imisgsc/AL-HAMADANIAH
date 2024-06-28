@@ -33,6 +33,7 @@ setInterval(nextSlide, 1000); // Change slide every 3 seconds
 document.addEventListener("DOMContentLoaded", () => {
     const buttons = document.querySelectorAll("#buttons-container button a");
     const cards = document.querySelectorAll(".card");
+    const topSectionHeight = document.getElementById("top-section").offsetHeight;
 
     buttons.forEach(button => {
         button.addEventListener("click", (event) => {
@@ -41,7 +42,9 @@ document.addEventListener("DOMContentLoaded", () => {
             const targetCard = document.getElementById(targetId);
 
             cards.forEach(card => card.classList.remove("highlight"));
-            targetCard.scrollIntoView({ behavior: "smooth" });
+            const offsetTop = targetCard.getBoundingClientRect().top + window.pageYOffset - topSectionHeight;
+
+            window.scrollTo({ top: offsetTop, behavior: "smooth" });
             targetCard.classList.add("highlight");
 
             setTimeout(() => {
@@ -49,15 +52,5 @@ document.addEventListener("DOMContentLoaded", () => {
             }, 2000);
         });
     });
-
-//back-to-top btn
-    const backToTopButton = document.getElementById("back-to-top");
-
-    window.addEventListener("scroll", () => {
-        if (window.pageYOffset > 100) {
-            backToTopButton.style.display = "block";
-        } else {
-            backToTopButton.style.display = "none";
-        }
-    });
 });
+
