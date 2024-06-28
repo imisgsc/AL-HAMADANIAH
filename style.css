@@ -48,7 +48,7 @@ body {
     overflow: hidden;
     display: flex;
     justify-content: center;
-    padding-top: 60px; /* Adjust this value based on the height of the top section */
+    margin-top: 60px; /* Adjusted to ensure it is visible below the fixed top section */
 }
 
 .slider {
