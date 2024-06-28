@@ -196,28 +196,30 @@ body {
 
 .contact-section {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .contact-section h3 {
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-
-.contact-section p {
+    font-size: 24px;
     margin-bottom: 10px;
-    font-size: 20px;
 }
 
-.contact-section i {
+.contact-section .contact-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-section .contact-info i {
     margin-right: 10px;
     color: #1e90ff; /* Blue color */
 }
 
-iframe {
-    width: 100%;
-    height: 300px;
-    border: none;
-    border-radius: 10px;
+.contact-section .contact-info p {
+    margin: 0;
+    font-size: 16px;
 }
 
 @media screen and (max-width: 768px) {
