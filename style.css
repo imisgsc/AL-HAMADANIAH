@@ -15,15 +15,14 @@ body {
     padding: 10px 20px;
     background-color: #1b1b1b;
     position: fixed;
-    top: 0;
     width: 100%;
+    top: 0;
     z-index: 1000;
 }
 
 #top-section p {
     font-size: 16px;
     color: #fff;
-    margin: 0 10px;
 }
 
 #top-section h3 {
@@ -39,8 +38,8 @@ body {
 }
 
 #whatsapp-link img {
+    margin-right: 50px;
     height: 30px;
-    margin-left: 10px;
 }
 
 .slider-container {
