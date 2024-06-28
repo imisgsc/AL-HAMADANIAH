@@ -200,15 +200,17 @@ body {
 
 .contact-section h3 {
     font-size: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .contact-section p {
-    margin: 5px 0;
+    margin-bottom: 10px;
+    font-size: 20px;
 }
 
 .contact-section i {
     margin-right: 10px;
+    color: #1e90ff; /* Blue color */
 }
 
 iframe {
@@ -227,5 +229,9 @@ iframe {
     .map-section, .contact-section {
         width: 100%;
         margin-bottom: 20px;
+    }
+
+    .contact-section h3 {
+        font-size: 20px;
     }
 }
