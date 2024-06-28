@@ -52,6 +52,10 @@ document.addEventListener("DOMContentLoaded", () => {
             }, 2000);
         });
     });
+
+    // Event listener for the heading to scroll to the top
+    const heading = document.querySelector("#top-section h3");
+    heading.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
 });
-
-

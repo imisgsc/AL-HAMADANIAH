@@ -29,6 +29,7 @@ body {
     margin: 0;
     color: #fff;
     font-size: 22px;
+    cursor: pointer;
 }
 
 .contact-link {
