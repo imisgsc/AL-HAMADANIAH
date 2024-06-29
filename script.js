@@ -14,7 +14,7 @@ function showSlide(index) {
         currentIndex = index;
     }
 
-    const offset = -currentIndex * 220; // Adjust this value based on slide width and margin
+    const offset = -currentIndex * 220;
     slider.style.transform = `translateX(${offset}px)`;
 }
 
