@@ -26,7 +26,7 @@ function prevSlide() {
     showSlide(currentIndex - 1);
 }
 
-setInterval(nextSlide, 1000); // Change slide every 3 seconds
+setInterval(nextSlide, 1000);
 
 
 //smooth scroll
