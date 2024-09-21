@@ -23,6 +23,55 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Full-screen hero section with the image */
+.hero {
+    height: 100vh;
+    background-image: url('images/hero-image.png'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align entire content to the right */
+    color: white;
+    font-family: Arial, sans-serif;
+    padding-right: 5%; /* Add some padding from the right */
+}
+
+/* Dark overlay to enhance text visibility */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional dark overlay */
+}
+
+/* Content wrapper */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    text-align: right; /* Align text to the right */
+    margin-left: auto;
+    margin-right: 100px;
+}
+
+/* Title styling */
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 300px;
+}
+
+/* Subtitle styling */
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
 #top-section h3 {
     font-size: 22px;
     font-weight: 500;
@@ -35,7 +84,7 @@ body {
     overflow: hidden;
     display: flex;
     justify-content: center;
-    margin-top: 70px;
+    margin-top: 30px;
 }
 
 .slider {
@@ -85,7 +134,7 @@ body {
     margin-bottom: 40px;
 }
 
-/*#buttons-container {
+#buttons-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
@@ -110,7 +159,7 @@ body {
     width: 130px;
     height: 120px;
     border-radius: 8px;
-}*/
+}
 
 .card-container {
     display: grid;
@@ -165,9 +214,14 @@ footer {
     text-align: center;
 }
 
+.footer-content h2{
+    margin-top: 3px;
+}
+
 .footer-content p {
     margin: 5px 0;
     color: #001E6C;
+    font-weight: 800;
     
 }
 
@@ -181,8 +235,29 @@ footer {
 }
 
 
-@media (min-width: 768px) {
-    .map-section, .contact-section {
-        width: 48%;
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem; /* Smaller font size */
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem; /* Smaller font size */
+    }
+
+    #info h2 {
+        font-size: 1.5rem; /* Smaller font size */
+    }
+
+    #info h3 {
+        font-size: 1.2rem; /* Smaller font size */
+    }
+
+    #buttons-container button img {
+        width: 90%; /* Adjust image size */
+    }
+
+    .slide img {
+        width: 100px; /* Adjust image size for smaller screens */
     }
 }
