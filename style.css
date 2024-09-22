@@ -22,11 +22,19 @@ body {
     z-index: 1000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+#top-section h3 {
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 30px;
+}
 
 /* Full-screen hero section with the image */
 .hero {
     height: 100vh;
     background-image: url('images/hero-image.png'); /* Replace with your image */
+    
     background-size: cover;
     background-position: center;
     position: relative;
@@ -60,23 +68,18 @@ body {
 
 /* Title styling */
 .hero-title {
-    font-size: 3rem;
-    font-weight: bold;
+    font-size: 60px;
+    font-weight:bold;
     margin-bottom: 20px;
     margin-top: 300px;
+    color: #FFAA4C;
 }
 
 /* Subtitle styling */
 .hero-subtitle {
-    font-size: 1.5rem;
+    font-size: 25px;
     margin-bottom: 40px;
-}
-
-#top-section h3 {
-    font-size: 22px;
-    font-weight: 500;
-    cursor: pointer;
-    text-align: center;
+    font-weight: lighter;
 }
 
 .slider-container {
@@ -134,38 +137,14 @@ body {
     margin-bottom: 40px;
 }
 
-#buttons-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-    margin-top: 30px;
-}
-
-#buttons-container button {
-    background-color: #fff;
-    border: 2px solid #001E6C;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: transform 0.3s, background-color 0.3s;
-    text-align: center;
-    padding: 20px;
-}
-
-#buttons-container button:hover {
-    transform: translateY(-5px);
-}
-
-#buttons-container button img {
-    width: 130px;
-    height: 120px;
-    border-radius: 8px;
-}
-
 .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-margin-top: 3px;    
+    margin-top: 3px;  
+    margin-left: 20px;  
+    margin-right: 20px;
+    height: 1100px;
 }
 
 .card {
@@ -212,6 +191,7 @@ footer {
     color: white;
     padding: 20px;
     text-align: center;
+    margin-top: 10px;
 }
 
 .footer-content h2{
